@@ -1,5 +1,6 @@
 import unittest
-from Calc import Calculator # The class we are going to implement
+from Calc import Calculator  # The class we are going to implement
+
 
 class TestCalculator(unittest.TestCase):
     def setUp(self):
@@ -18,6 +19,7 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.div(3, 2)
         self.assertIsInstance(result, float)  # check type
         self.assertEqual(result, 1.5)  # Expect 3 / 2 = 1.5
+
 
 if __name__ == "__main__":
     unittest.main()
