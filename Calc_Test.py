@@ -19,7 +19,3 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.div(3, 2)
         self.assertIsInstance(result, float)  # check type
         self.assertEqual(result, 1.5)  # Expect 3 / 2 = 1.5
-
-
-if __name__ == "__main__":
-    unittest.main()
